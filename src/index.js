@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap-theme.css'
 
 ReactDOM.render(
-  <App />,
+  <Router routes={routes} history={browserHistory} />,
   document.getElementById('root')
 );
